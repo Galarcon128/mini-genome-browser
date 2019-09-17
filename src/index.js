@@ -1,21 +1,37 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import GeneData from './inner_Components/resources/GeneData.json'
+import DrawGene from './inner_Components/GenomeBrowserMINI'
 
-import styles from './styles.css'
+export default class MiniGB extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      query: '',
+      gen: {},
+      genes: []
+    }
+  }
+  _onChangeQuery = (event) => {
+    this.setState({ query: event.target.value })
+    this.setState({ gen: this._onS(event.target.value) })
+  }
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
+  _onS = (s) => {
+    let find = GeneData.Genes.find(Genes => Genes.name === s)
+    console.log(find)
+    return find
   }
 
   render() {
-    const {
-      text
-    } = this.props
-
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div>
+        <h1>Gene Search </h1>
+        <input type='text' name='TitleMap'
+          value={this.state.query}
+          onChange={(event) => this._onChangeQuery(event)} />
+        <button onClick={this._onS}>Search</button>
+        <button>config</button>
+        <DrawGene GeneData={this.state.gen} />
       </div>
     )
   }
