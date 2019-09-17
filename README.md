@@ -1,6 +1,6 @@
 # mini-genome-browser
 
-> tool by regulonDB
+> tool by regulonDB CCG-UNAM 
 
 [![NPM](https://img.shields.io/npm/v/mini-genome-browser.svg)](https://www.npmjs.com/package/mini-genome-browser) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
