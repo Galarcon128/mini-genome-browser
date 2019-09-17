@@ -13,6 +13,7 @@ npm install --save mini-genome-browser
 ## Usage
 
 ```jsx
+you need a json data with gene info
 import React, { Component } from 'react'
 
 import MyComponent from 'mini-genome-browser'
@@ -20,7 +21,7 @@ import MyComponent from 'mini-genome-browser'
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <MyComponent GeneData={object}/>
     )
   }
 }
