@@ -39,4 +39,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [galarcon CCG-UNAM](https://github.com/galarcon CCG-UNAM)
+MIT © [RegulonDB  CCG-UNAM](http://regulondb.ccg.unam.mx/)
