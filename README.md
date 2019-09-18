@@ -12,8 +12,18 @@ npm install --save mini-genome-browser
 
 ## Usage
 
+# 1 You need a gene data.
+the componente rec
+
+The component receives by the prop "GeneData" an object with the information of the gene
+example
+```json
+{"name": "insB-1", "id":"ECK120002705", "posL":"19811", "posR":"20314", "strand":"reverse", "color":"noCode"},
+```
+
+# 2 on component implementation 
+
 ```jsx
-you need a json data with gene info
 import React, { Component } from 'react'
 
 import MyComponent from 'mini-genome-browser'
