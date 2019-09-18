@@ -40,7 +40,7 @@ export default class DrawGeneInfo extends Component {
         .attr('x', (W / 2) / 2)
         .attr('y', (W / 2) - 50)
         .attr('font-family', 'sans-serif')
-        .attr('fill', 'blue')
+        .attr('fill', 'Red')
         .attr('font-size', '35px')
       text = svg.append('text').text('position left: ' + GeneData.posL)
         .attr('text-align', 'left')
