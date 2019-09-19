@@ -8,7 +8,7 @@ import svgr from '@svgr/rollup'
 
 import pkg from './package.json'
 
-export default [{
+export default {
   input: 'src/index.js',
   output: [
     {
@@ -36,33 +36,4 @@ export default [{
     resolve(),
     commonjs()
   ]
-},
-{
-  input: 'src/basic/buttom.js',
-  output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-      sourcemap: true
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: true
-    }
-  ],
-  plugins: [
-    external(),
-    postcss({
-      modules: true
-    }),
-    url(),
-    svgr(),
-    babel({
-      exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
-    }),
-    resolve(),
-    commonjs()
-  ]
-}]
+}
