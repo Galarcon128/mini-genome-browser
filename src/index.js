@@ -5,6 +5,16 @@ import PropTypes from 'prop-types'
 const W = 500
 const H = 500
 
+export class Hola extends Component {
+  render() {
+    return (
+      <div >
+        <h1>Hola WEE</h1>
+      </div>
+    )
+  }
+}
+
 export default class DrawGeneInfo extends Component {
   static propTypes = {
     GeneData: PropTypes.object
