@@ -1,6 +1,7 @@
 import * as d3 from 'd3'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import buttom from './basic/buttom'
 
 const W = 500
 const H = 500
